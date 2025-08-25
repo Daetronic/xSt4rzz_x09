@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star's Personal Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        .side-image-left {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 200px;
+            object-fit: cover;
+            opacity: 0.65;
+            z-index: -1;
+        }
+        .side-image-right {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 200px;
+            object-fit: cover;
+            opacity: 0.65;
+            z-index: -1;
+        }
+        .decorative-star {
+            position: absolute;
+            z-index: 0;
+            opacity: 0.3;
+        }
+        .star-top-left {
+            top: 10%;
+            left: 15%;
+            width: 100px;
+            height: 100px;
+        }
+        .star-bottom-right {
+            bottom: 10%;
+            right: 15%;
+            width: 120px;
+            height: 120px;
+        }
+        @media (max-width: 768px) {
+            .side-image-left, .side-image-right {
+                width: 100px;
+            }
+            .star-top-left, .star-bottom-right {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-blue-200 font-sans relative overflow-x-hidden">
+    <img src="finn1.webp" alt="Leftie" class="side-image-left">
+    <img src="finn2.webp" alt="Rightie" class="side-image-right">
+
+    <svg class="decorative-star star-top-left">
+        <defs>
+            <linearGradient id="starGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#60A5FA;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#A78BFA;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <path d="M50 0 L63 38 L100 38 L69 62 L82 100 L50 75 L18 100 L31 62 L0 38 L37 38 Z" fill="url(#starGradient1)" />
+    </svg>
+    <svg class="decorative-star star-bottom-right">
+        <defs>
+            <linearGradient id="starGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#A78BFA;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#60A5FA;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <path d="M60 0 L76 46 L120 46 L83 71 L99 120 L60 90 L21 120 L37 71 L0 46 L44 46 Z" fill="url(#starGradient2)" />
+    </svg>
+
+    <div class="container mx-auto px-4 py-12 max-w-3xl relative z-10">
+        <header class="text-center mb-12">
+            <h1 class="text-5xl font-bold text-blue-800">Star</h1>
+			<h6 class="text-1xl font-bold text-blue-500">website made by DaemonCribb <3 </h6>
+            <p class="text-1g text-blue-700 mt-1">...welcome to my personal space...</p>
+        </header>
+
+        <section class="bg-blue-50 p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-3xl font-semibold text-blue-800 mb-4">About Me</h2>
+            <p class="text-blue-600 leading-relaxed">
+                heya, i'm star! I'm passionate about creativity, technology, and connecting with people. in my free time, you can find me playing games (dandys world) or at school. thanks for visiting my corner of the internet!
+            </p>
+        </section>
+
+        <section class="text-center">
+            <h2 class="text-3xl font-semibold text-blue-800 mb-6">Connect with Me</h2>
+            <div class="flex justify-center space-x-6 flex-wrap">
+                <a href="https://www.tiktok.com/@xst4rzz_x09" target="_blank" class="text-blue-500 hover:text-blue-700 transition text-lg font-medium">TikTok</a>
+                <a href="https://open.spotify.com/user/31eu2jjr5weobq2m3rpan2xnq7ee" target="_blank" class="text-blue-500 hover:text-blue-700 transition text-lg font-medium">Spotify</a>
+                <a href="https://steamcommunity.com/profiles/76561199566524279" target="_blank" class="text-blue-500 hover:text-blue-700 transition text-lg font-medium">Steam</a>
+                <a href="https://www.instagram.com/x._starz.x_/#" target="_blank" class="text-blue-500 hover:text-blue-700 transition text-lg font-medium">Instagram</a>
+                <a href="https://www.youtube.com/channel/UCucvZwWWLLEwn0-9Z2RIHGg" target="_blank" class="text-blue-500 hover:text-blue-700 transition text-lg font-medium">YouTube</a>
+				<a href="https://www.roblox.com/users/1458533832/profile" target="_blank" class="text-blue-500 hover:text-blue-700 transition text-lg font-medium">Roblox</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
